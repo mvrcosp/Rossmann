@@ -2,14 +2,14 @@
 
 ## Business Problem
 
-Rossmann is one of the largest drug store chains in Europe, operating over 3,000 stores in 7 European countries. Recently Rossmann managers were challenged with the task of **predicting their daily sales for up to six weeks in advance.** Store sales are influenced by many factors, including promotions, competition, school and state holidays, seasonality, and locality. 
+Rossmann is one of the largest drug store chains in Europe, operating over 3,000 stores in 7 European countries. Recently Rossmann store managers were challenged with the task of **predicting their total sales for the next six weeks.** Store sales are influenced by many factors, including promotions, competition, school and state holidays, seasonality, and locality. 
 
 ## Problem Understanding
 
 * **Motivation**: Forecast sales to help the business team with decision making.
 * **Root cause**: The necessity to plan inventory for the upcoming weeks
 * **Problem Ownership**: Rosmann CFO
-* **Solution Format**: Predict daily sales per store for the next 42 days, 6 weeks.
+* **Solution Format**: A Regression model to predict sales for each store for the next six weeks.
 
 ## Business Assumptions
 
@@ -19,7 +19,12 @@ Rossmann is one of the largest drug store chains in Europe, operating over 3,000
 
 ## Solution Strategy
 
-**Step 01 - Loading Data and first look:** Collecting data and taking a look at its attributes, target variable, dtypes and missing values.
+1. **Step 01 - Loading Data and first look:** Collecting data and taking a look at its attributes, target variable, dtypes and missing values.
+
+2. **Step 02 - Dealing with missing values and data cleaning:** Filling in missing values, changing data types, renaming collumns.
+
+3. **Step 03 - Feature Engineering:** 
+
 
 
 Rossmann sales prediction project
