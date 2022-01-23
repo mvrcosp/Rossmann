@@ -2,9 +2,9 @@
 
 ## Forecasting sales for the European drugstore chain Rossmann
 
-
-
-![](https://github.com/mvrcosp/Rossmann/blob/main/img/Rossmann.png)
+<p align="center">
+  <img src="https://github.com/mvrcosp/Rossmann/blob/main/img/Rossmann.png">
+</p>
 
 **Disclaimer:** The dataset I used to create this project is public and it was provided by Kaggle as part of one of their competitions, you can find it [here.](https://www.kaggle.com/c/rossmann-store-sales/data)  The goal of this project is to simulate a real business situation.  
 
