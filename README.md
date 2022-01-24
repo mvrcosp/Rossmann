@@ -48,9 +48,9 @@ The most interesting findings I had while performing Exploratory Data Analysis. 
 
   **False:** In the visualization bellow, representing total sales versus competition distance, we can see that stores with competitors nearby sell more and that sales decreases when distance increases.
 
-  !["SalesxCompDistance"](/home/mvrcosp/repos/DSP/Rossmann/img/CompetitionDistanceBinned.png)
-
-
+<p align="left">
+  <img src="https://github.com/mvrcosp/Rossmann/blob/main/img/CompetitionDistanceBinned.png">
+</p>
 
 * **Business Hypothesis #4**
 
