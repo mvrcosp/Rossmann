@@ -40,13 +40,25 @@ Rossmann is one of the largest drug store chains in Europe, operating over 3,000
 3. **Step 12 - Training final model and evaluating error:** Training the final model and interpreting  the error metrics to present it to business.
 3. **Step 13 - Model Deploy:** Deploy to production so managers can access the predictions results.
 
-## Top Data Insights
+## Top 3 (+1) Data Insights
+
+The most interesting findings I had while performing Exploratory Data Analysis. You can  find all business hypothesis that I tested in the EDA notebook.
+
+* **Business Hypothesis #2** - Stores with local competitors should sell less.
+
+  **False:** In the visualization bellow, representing total sales versus competition distance, we can see that stores with competitors nearby sell more and that sales decreases when distance increases.
+
+  !["SalesxCompDistance"](/home/mvrcosp/repos/DSP/Rossmann/img/CompetitionDistanceBinned.png)
 
 
 
+* **Business Hypothesis #4**
 
+* **Business Hypothesis #8**
 
+* **Bonus: Business Hypothesis # 6**
 
+  
 
 
 

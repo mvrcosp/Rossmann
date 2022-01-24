@@ -10,10 +10,10 @@ class Rossmann(object):
         super().__init__()
         self.home_path="/home/mvrcosp/repos/DSP/Rossmann/"
         self.competition_distance_scaler = pickle.load(open(self.home_path + "scalers/competition_distance_scaler.pkl", "rb"))
-        self.competition_time_month_scaler = pickle.load(open(self.home_path + "scalers/competition_time_month_scaler.pkl"), "rb")
-        self.competition_promo_type_week_scaler = pickle.load(open(self.home_path + "scalers/promo_time_week_scaler.pkl"), "rb")
-        self.year_scaler = pickle.load(open(self.home_path + "scalers/year_scaler.pkl"), "rb")
-        self.store_type_scaler = pickle.load(open(self.home_path + "scalers/store_type_scaler.pkl"), "rb")
+        self.competition_time_month_scaler = pickle.load(open(self.home_path + "scalers/competition_time_month_scaler.pkl", "rb"))
+        self.competition_promo_time_week_scaler = pickle.load(open(self.home_path + "scalers/promo_time_week_scaler.pkl", "rb"))
+        self.year_scaler = pickle.load(open(self.home_path + "scalers/year_scaler.pkl", "rb"))
+        self.store_type_scaler = pickle.load(open(self.home_path + "scalers/store_type_scaler.pkl", "rb"))
 
 
     def data_cleaning(self, df1):
@@ -112,23 +112,23 @@ class Rossmann(object):
     def data_preparation(self, df5):
         # 5.2. Rescaling 
         # competition distance
-        df5['competition_distance'] = self.competition_distance_scaler.fit_transform( df5[['competition_distance']].values )
+        df5['competition_distance'] = self.competition_distance_scaler.transform( df5[['competition_distance']].values )
     
         # competition time month
-        df5['competition_time_month'] = self.competition_time_month_scaler.fit_transform( df5[['competition_time_month']].values )
+        df5['competition_time_month'] = self.competition_time_month_scaler.transform( df5[['competition_time_month']].values )
 
         # promo time week
-        df5['promo_time_week'] = self.promo_time_week_scaler.fit_transform( df5[['promo_time_week']].values )
+        df5['promo_time_week'] = self.competition_promo_time_week_scaler.transform( df5[['promo_time_week']].values )
         
         # year
-        df5['year'] = self.year_scaler.fit_transform( df5[['year']].values )
+        df5['year'] = self.year_scaler.transform( df5[['year']].values )
 
         ### 5.3.1. Encoding
         # state_holiday - One Hot Encoding
         df5 = pd.get_dummies( df5, prefix=['state_holiday'], columns=['state_holiday'] )
 
         # store_type - Label Encoding
-        df5['store_type'] = self.store_type_scaler.fit_transform( df5['store_type'] )
+        df5['store_type'] = self.store_type_scaler.transform( df5['store_type'] )
 
         # assortment - Ordinal Encoding
         assortment_dict = {'basic': 1,  'extra': 2, 'extended': 3}
