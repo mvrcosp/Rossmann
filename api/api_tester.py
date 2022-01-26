@@ -21,8 +21,8 @@ df_testing = df_testing.drop( 'Id', axis=1 )
 data = json.dumps( df_testing.to_dict( orient='records' ) )
 
  # API Call
-url = 'http://192.168.15.35:5000/rossmann/predict'
-#url = 'https://rossmann-model-test.herokuapp.com/rossmann/predict'
+#url = 'http://192.168.15.35:5000/rossmann/predict'
+url = 'https://rossmann-model-mp.herokuapp.com/rossmann/predict'
 header = {'Content-type': 'application/json' } 
 data = data
 
@@ -40,4 +40,5 @@ for i in range( len( d2 ) ):
     print( 'Store Number {} will sell R${:,.2f} in the next 6 weeks'.format( 
             d2.loc[i, 'store'], 
             d2.loc[i, 'prediction'] ) )
+
 # %%
