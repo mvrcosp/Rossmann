@@ -44,7 +44,7 @@ Rossmann is one of the largest drug store chains in Europe, operating over 3,000
 
 The most interesting findings I had while performing Exploratory Data Analysis. You can  find all business hypothesis that I tested in the EDA notebook.
 
-* **Business Hypothesis #2** - Stores with local competitors should sell less.
+* **Business Hypothesis #2** - **Stores with local competitors should sell less.**
 
   **False:** In the visualization bellow, representing total sales versus competition distance, we can see that stores with competitors nearby sell more and that sales decreases when distance increases.
 
@@ -52,13 +52,52 @@ The most interesting findings I had while performing Exploratory Data Analysis. 
   <img src="https://github.com/mvrcosp/Rossmann/blob/main/img/CompetitionDistanceBinned.png">
 </p>
 
-* **Business Hypothesis #4**
+* **Business Hypothesis #4** - **Stores that keep their promos active for longer periods should sell more.**
 
-* **Business Hypothesis #8**
+  **False:** We can see that when promotion time increases (described in weeks in the visualization bellow), sales actually start to drop.
 
-* **Bonus: Business Hypothesis # 6**
+<p align="left">
+  <img src="/home/mvrcosp/repos/DSP/Rossmann/img/SalesOverWeeks.png">
+</p>
 
-  
+
+* **Business Hypothesis #8** - **Stores should sell more at the 2nd semester of the year.**
+
+  **False:** Sales decrease drastically after July. We can clearly see bellow that the 1st semester  outperforms the 2nd semester in terms of sales.
+
+  <p align="left">
+    <img src="/home/mvrcosp/repos/DSP/Rossmann/img/SalesThroughoutTheMonths.png">
+  </p>
+
+
+* 🐰 **Easter Egg:  Business Hypothesis # 6** - **Stores that open during Christmas season should sell more.**
+
+  **False:** In average, Easter holiday sells better than Christmas. Sorry Santa, but Bunny got this one :(
+
+  <p align="left">
+    <img src="/home/mvrcosp/repos/DSP/Rossmann/img/SalesHolidays.png">
+  </p>
+
+## Machine Learning Models Performance
+
+I trained four different machine learning algorithms performing cross-validation on each one of them to better prevent overfitting. The metrics results are presented bellow. We can see that the linear algorithms didn't perform too well when compared to the tree-based algorithms. The I algorithm I chose to deploy to production was **XGBoost** since it runs much faster than Random Forest, the algorithm that performed the best. 
+
+  <p align="center">
+    <img src="/home/mvrcosp/repos/DSP/Rossmann/img/MetricsResults.png">
+  </p>
+
+
+## Business Results
+
+## Conclusion
+
+## Next steps and improvements
+
+
+
+
+
+
 
 
 
