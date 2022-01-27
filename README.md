@@ -57,7 +57,7 @@ The most interesting findings I had while performing Exploratory Data Analysis. 
   **False:** We can see that when promotion time increases (described in weeks in the visualization bellow), sales actually start to drop.
 
 <p align="left">
-  <img src="/home/mvrcosp/repos/DSP/Rossmann/img/SalesOverWeeks.png">
+  <img src="https://github.com/mvrcosp/Rossmann/blob/main/img/SalesOverWeeks.png">
 </p>
 
 
@@ -66,7 +66,7 @@ The most interesting findings I had while performing Exploratory Data Analysis. 
   **False:** Sales decrease drastically after July. We can clearly see bellow that the 1st semester  outperforms the 2nd semester in terms of sales.
 
   <p align="left">
-    <img src="/home/mvrcosp/repos/DSP/Rossmann/img/SalesThroughoutTheMonths.png">
+    <img src="https://github.com/mvrcosp/Rossmann/blob/main/img/SalesThroughoutTheMonths.png">
   </p>
 
 
@@ -75,7 +75,7 @@ The most interesting findings I had while performing Exploratory Data Analysis. 
   **False:** In average, Easter holiday sells better than Christmas. Sorry Santa, but Bunny got this one :(
 
   <p align="left">
-    <img src="/home/mvrcosp/repos/DSP/Rossmann/img/SalesHolidays.png">
+    <img src="https://github.com/mvrcosp/Rossmann/blob/main/img/SalesHolidays.png">
   </p>
 
 ## Machine Learning Models Performance
@@ -83,7 +83,7 @@ The most interesting findings I had while performing Exploratory Data Analysis. 
 I trained four different machine learning algorithms performing cross-validation on each one of them to better prevent overfitting. The metrics results are presented bellow. We can see that the linear algorithms didn't perform too well when compared to the tree-based algorithms. The I algorithm I chose to deploy to production was **XGBoost** since it runs much faster than Random Forest, the algorithm that performed the best. 
 
   <p align="center">
-    <img src="/home/mvrcosp/repos/DSP/Rossmann/img/MetricsResults.png">
+    <img src="https://github.com/mvrcosp/Rossmann/blob/main/img/MetricsResults.png">
   </p>
 
 
