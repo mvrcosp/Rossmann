@@ -5,8 +5,9 @@
 <p align="center">
   <img src="https://github.com/mvrcosp/Rossmann/blob/main/img/Rossmann.png">
 </p>
-
 **Disclaimer:** The dataset I used to create this project is public and it was provided by Kaggle as part of one of their competitions, you can find it [here.](https://www.kaggle.com/c/rossmann-store-sales/data)  The goal of this project is to simulate a real business situation.  
+
+## TLDR
 
 ## Business Problem
 
@@ -15,7 +16,7 @@ Rossmann is one of the largest drug store chains in Europe, operating over 3,000
 ## Problem Understanding
 
 * **Motivation**: Forecast sales to help the business team with decision making.
-* **Root cause**: The necessity to plan inventory for the upcoming weeks
+* **Root cause**: The CFO necessity to set budget for the upcoming weeks
 * **Solution Format**: A Regression model to predict sales for each store for the next six weeks.
 
 ## Business Assumptions
@@ -89,7 +90,11 @@ I trained four different machine learning algorithms performing cross-validation
 
 ## Business Results
 
+The predictions made by our algorithm expects a total (all stores included) sales value of $ 285,860,480.00 for the next six weeks. You can see the prediction for each store, with worst and best scenarios calculated, in this csv file. To calculate worst and best scenarios we used the `mean absolute error (MAE)` metric. In the image bellow we have a lineplot comparing our predictions with the actual values of our test dataset.
+
 ## Conclusion
+
+This sales forecast can possibly be used by the CFO to help when setting budgets for each store. We also hope to bring some interest insights with the results of our exploratory analysis. Our model is hosted in a production environment at Heroku, so store managers can easily access it. They can use an application such as **Postman** to send a JSON file with the store's attributes and receive back the store's prediction. We've also built a **Telegram bot** so they can access the predictions on mobile phones. In this case, you they must pass the number of the store to obtain its sales prediction. 
 
 ## Next steps and improvements
 
