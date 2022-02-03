@@ -8,8 +8,6 @@
 
 **Disclaimer:** The dataset I used to create this project is public and it was provided by Kaggle as part of one of their competitions, you can find it [here.](https://www.kaggle.com/c/rossmann-store-sales/data)  The goal of this project is to simulate a real business situation.  
 
-## TLDR
-
 ## Business Problem
 
 Rossmann is one of the largest drug store chains in Europe, operating over 3,000 stores in 7 European countries. Recently Rossmann store managers were challenged with the task of **predicting their total sales for each store during a period of six weeks.** Store sales are influenced by many factors, including promotions, competition, school and state holidays, seasonality, and locality. 
@@ -91,21 +89,24 @@ I trained four different machine learning algorithms performing cross-validation
 
 ## Business Results
 
-The predictions made by our algorithm expects a total (all stores included) sales value of $ 285,860,480.00 for the next six weeks. You can see the prediction for each store, with worst and best scenarios calculated, in this csv file. To calculate worst and best scenarios we used the `mean absolute error (MAE)` metric. In the image bellow we have a lineplot comparing our predictions with the actual values of our test dataset.
+The predictions made by our algorithm expects a total (all stores included) sales value of $ 285,860,480.00 for the next six weeks. You can see the prediction for each store, with worst and best scenarios calculated, [in this csv file]("/home/mvrcosp/repos/DSP/Rossmann/data/processed/StoreSalesPredictions.csv"). To calculate worst and best scenarios we used the `mean absolute error (MAE)` metric. In the image bellow we have a lineplot comparing our predictions with the actual values of our validation dataset.
+
+  <p align="center">
+    <img src="https://github.com/mvrcosp/Rossmann/blob/main/img/MetricsResults.png">
+  </p>
 
 ## Conclusion
 
-This sales forecast can possibly be used by the CFO to help when setting budgets for each store. We also hope to bring some interest insights with the results of our exploratory analysis. Our model is hosted in a production environment at Heroku, so store managers can easily access it. They can use an application such as **Postman** to send a JSON file with the store's attributes and receive back the store's prediction. We've also built a **Telegram bot** so they can access the predictions on mobile phones. In this case, you they must pass the number of the store to obtain its sales prediction. 
+This sales forecast can possibly be used by the CFO to help when setting budgets for each store. We also hope to bring some interesting insights with the results of our exploratory analysis. Our model is hosted in a production environment at **Heroku**, so store managers can easily access it. They can use an application such as **Postman** to send a JSON file with the store's attributes and receive back the store's prediction. We've also built a **Telegram bot** so they can access the predictions on mobile phones. In this case, they must pass the number of the store to obtain its sales prediction. 
+
+You can try our telegram bot using the link bellow.  To use it, you must pass a sidebar (/) followed by a store number (for example: /25, /806, /1097, etc.) and the bot will return how much that store will sell in the next six weeks. 
+
+[<img alt="Telegram" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/>](http://t.me/mp_rossmann_bot)
 
 ## Next steps and improvements
 
+We can test a few ideas to increase model's performance, such as:
 
-
-
-
-
-
-
-
- Rossmann sales prediction project
-
+* Try different strategies for data cleaning and imputation;
+* Try a different approach for data engineering, rescaling and encoding;
+* Try others classical methods for time series forecasting (such as autoregression and moving averages).
