@@ -89,7 +89,7 @@ I trained four different machine learning algorithms performing cross-validation
 
 ## Business Results
 
-The predictions made by our algorithm expects a total (all stores included) sales value of $ 285,860,480.00 for the next six weeks. You can see the prediction for each store, with worst and best scenarios calculated, [in this csv file](https://github.com/mvrcosp/Rossmann/blob/main/data/processed/StoreSalesPredictions.csv). To calculate worst and best scenarios we used the `mean absolute error (MAE)` metric. In the image bellow we have a lineplot comparing our predictions with the actual values of our validation dataset.
+The predictions made by our algorithm expects a total (all stores included) sales value of $ 285,860,480.00 for the next six weeks. You can see the prediction for each store, with worst and best scenarios calculated, [in this csv file](https://github.com/mvrcosp/Rossmann/blob/main/data/processed/StoreSalesPredictions.csv). To calculate worst and best scenarios we used the `mean absolute error (MAE)` metric. In the image bellow we have a lineplot comparing our predictions with the actual values of our validation dataset. You can find more business information on our notebook #8.
 
   <p align="center">
     <img src="https://github.com/mvrcosp/Rossmann/blob/main/img/SalesPredictionsOverTime.png">
