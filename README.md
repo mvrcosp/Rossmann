@@ -97,7 +97,7 @@ The predictions made by our algorithm expects a total (all stores included) sale
 
 ## Conclusion
 
-This sales forecast can possibly be used by the CFO to help when setting budgets for each store. We also hope to bring some interesting insights with the results of our exploratory analysis. Our model is hosted in a production environment at **Heroku**, so store managers can easily access it. They can use an application such as **Postman** to send a JSON file with the store's attributes and receive back the store's prediction. We've also built a **Telegram bot** so they can access the predictions on mobile phones. In this case, they must pass the number of the store to obtain its sales prediction. 
+This sales forecast can possibly be used by the CFO to help when setting budget for each store. We also hope to bring some interesting insights with the results of our exploratory analysis. Our model is hosted in a production environment at **Heroku**, so store managers can easily access it. They can use an application such as **Postman** to send a JSON file with the store's attributes and receive back the store's prediction. We've also built a **Telegram bot** so they can access the predictions on mobile phones. In this case, they must pass the number of the store to obtain its sales prediction. 
 
 You can try our telegram bot using the link bellow.  To use it, you must pass a sidebar (/) followed by a store number (for example: /25, /806, /1097, etc.) and the bot will return how much that store will sell in the next six weeks. 
 
