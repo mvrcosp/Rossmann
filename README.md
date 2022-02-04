@@ -106,7 +106,7 @@ You can try our telegram bot using the link bellow. To use it, you must pass a s
 
 [<img alt="Telegram" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/>](http://t.me/mp_rossmann_bot)
 
-## Next steps and improvements
+## Next steps and Improvements
 
 We can test a few ideas to increase model's performance, such as:
 
