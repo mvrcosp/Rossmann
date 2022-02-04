@@ -6,7 +6,7 @@ import pandas as pd
 from flask import Flask, request, Response
 
 # token
-TOKEN = "5105386324:AAGsg1Qus7d-wdiADjrjnNkM9idSCVEGF4o"
+TOKEN = open("token.txt", "r").read()
 
 ## Info about the Bot - updated
 #https://api.telegram.org/bot5105386324:AAGsg1Qus7d-wdiADjrjnNkM9idSCVEGF4o/getMe
